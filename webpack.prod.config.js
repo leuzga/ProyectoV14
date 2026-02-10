@@ -14,6 +14,8 @@ module.exports = withModuleFederationPlugin({
     './AppModule': './src/app/app.module.ts'
   },
   
+  // Como REMOTE, no definimos remotes (solo el HOST los define)
+  // Pero sí compartimos dependencias
   shared: {
     // Solo compartir rxjs y tslib - NO compartir Angular entre versiones diferentes
     ...share({
