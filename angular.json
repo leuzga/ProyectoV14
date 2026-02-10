@@ -50,7 +50,11 @@
                 }
               ],
               "outputHashing": "all",
-              "extraWebpackConfig": "webpack.prod.config.js"
+              "extraWebpackConfig": "webpack.prod.config.js",
+              "optimization": true,
+              "buildOptimizer": true,
+              "sourceMap": false,
+              "namedChunks": false
             },
             "development": {
               "buildOptimizer": false,
