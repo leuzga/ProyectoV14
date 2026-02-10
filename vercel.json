@@ -1,9 +1,14 @@
 {
   "version": 2,
   "name": "proyecto-v14-remote",
-  "buildCommand": "npm run build",
+  "buildCommand": "npm run build -- --configuration production",
   "outputDirectory": "dist/proyecto-v14",
-  "framework": "angular",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
   "headers": [
     {
       "source": "/remoteEntry.js",
